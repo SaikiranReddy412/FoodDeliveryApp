@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.exampleapp.fooddeliveryapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.exampleapp.fooddeliveryapp.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.exampleapp.fooddeliveryapp.ui.menu.MenuFragment"
+        android:label="@string/menu_menu"
+        tools:layout="@layout/fragment_menu" />
+
+    <fragment
+        android:id="@+id/nav_food_list"
+        android:name="com.exampleapp.fooddeliveryapp.ui.foodlist.FoodListFragment"
+        android:label="@string/menu_food_list"
+        tools:layout="@layout/food_list_fragment" />
+
+    <fragment
+        android:id="@+id/nav_food_detail"
+        android:name="com.exampleapp.fooddeliveryapp.ui.fooddetail.FoodDetailFragment"
+        android:label="@string/menu_food_detail"
+        tools:layout="@layout/fragment_food_detail" />
+
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.exampleapp.fooddeliveryapp.ui.cart.CartFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/cart_fragment" />
+
+    <fragment
+        android:id="@+id/nav_view_orders"
+        android:name="com.exampleapp.fooddeliveryapp.ui.view_orders.ViewOrdersFragment"
+        android:label="@string/menu_view_orders"
+        tools:layout="@layout/view_orders_fragment" />
+
+
+
+
+
+</navigation>
