@@ -12,7 +12,7 @@ import retrofit2.http.POST;
 public interface IFCMService {
     @Headers({
             "Content-Type:application/json",
-            "Authorization:key=AAAAsRZ86oU:APA91bGRU7n8WOmElm0jCKzspf9Rd2YknBUcmBBHfKbqGjtMuv_OFMneNrJxZkvy5L41a4ZTd7dDBY7lAoRT0kTC9FXnflzzktW9SAq5wilypVshJ-6N8oatS9GxscPIIsA8FY_sDX79"
+            "Authorization:key="
     })
     @POST("fcm/send")
     Observable<FCMResponse> sendNotification(@Body FCMSendData body);
