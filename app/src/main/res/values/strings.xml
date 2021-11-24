@@ -27,7 +27,6 @@
     <string name="add_on">Addon</string>
     <string name="menu_update_info">Update Info</string>
 
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyC7R0c3nTrESE7qeXAMNVOoWVEdDAG5zM8</string>
     <string name="title_activity_tracking_order">Map</string>
 
 </resources>
